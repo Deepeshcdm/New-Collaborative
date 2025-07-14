@@ -23,15 +23,15 @@ function App() {
 
   if (loading) {
     return (
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
         height: '100vh',
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
       }}>
-        <div style={{ 
-          color: 'white', 
+        <div style={{
+          color: 'white',
           fontSize: '18px',
           fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'
         }}>
@@ -46,7 +46,7 @@ function App() {
   }
 
   return (
-    <div style={{ 
+    <div style={{
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       padding: '20px',
@@ -62,7 +62,7 @@ function App() {
         boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)',
         textAlign: 'center'
       }}>
-        <h1 style={{ 
+        <h1 style={{
           background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
@@ -72,8 +72,8 @@ function App() {
         }}>
           Welcome, {user.displayName || user.email}!
         </h1>
-        
-        <div style={{ 
+
+        <div style={{
           background: '#f7fafc',
           padding: '20px',
           borderRadius: '12px',
@@ -96,8 +96,8 @@ function App() {
             <strong>Account Created:</strong> {new Date(user.metadata.creationTime).toLocaleDateString()}
           </p>
         </div>
-        
-        <button 
+
+        <button
           onClick={handleLogout}
           style={{
             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
