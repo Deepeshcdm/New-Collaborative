@@ -1,0 +1,225 @@
+/* ====================================================================
+   MOBILE RESPONSIVE - Mobile-specific styles and optimizations
+   ==================================================================== */
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 16px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        animation: mobileBackgroundShift 15s ease-in-out infinite;
+    }
+
+    @keyframes mobileBackgroundShift {
+        0%, 100% {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        25% {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        }
+        50% {
+            background: linear-gradient(135deg, #667eea 0%, #9f7aea 100%);
+        }
+        75% {
+            background: linear-gradient(135deg, #9f7aea 0%, #667eea 100%);
+        }
+    }
+
+    /* Mobile Card Adjustments */
+    .login-card {
+        padding: 0;
+        border-radius: 20px;
+        animation: slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow:
+            0 30px 60px rgba(0, 0, 0, 0.2),
+            0 0 0 1px rgba(255, 255, 255, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+
+    /* Mobile Sigmoid Curve */
+    .login-card::before {
+        height: 240px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #9f7aea 100%);
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 35%,
+                90% 40%,
+                75% 50%,
+                60% 58%,
+                50% 60%,
+                40% 58%,
+                25% 50%,
+                10% 40%,
+                0 35%);
+    }
+
+    /* Mobile App Icon */
+    .app-icon-container {
+        top: 55px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .app-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    /* Mobile Content Padding */
+    .login-content {
+        padding: 160px 24px 32px 24px;
+    }
+
+    /* Mobile Title Animations */
+    .login-title {
+        font-size: 28px;
+        animation:
+            titleGlow 2s ease-in-out infinite alternate,
+            mobileTitlePulse 4s ease-in-out infinite;
+    }
+
+    @keyframes mobileTitlePulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    /* Mobile Social Buttons */
+    .social-button {
+        padding: 16px 16px;
+        font-size: 14px;
+        border-radius: 18px;
+        position: relative;
+        transform-style: preserve-3d;
+    }
+
+    .social-button:hover {
+        transform: translateY(-4px) scale(1.03) rotateX(5deg);
+        box-shadow:
+            0 15px 30px rgba(0, 0, 0, 0.25),
+            0 0 20px rgba(102, 126, 234, 0.3);
+    }
+
+    .social-button:active {
+        transform: translateY(-1px) scale(0.97) rotateX(-2deg);
+        animation: mobileButtonRipple 0.6s ease-out;
+    }
+
+    @keyframes mobileButtonRipple {
+        0% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
+        70% { box-shadow: 0 0 0 20px rgba(102, 126, 234, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0); }
+    }
+
+    /* Mobile Form Inputs */
+    .form-input {
+        padding: 16px 16px 16px 48px;
+        font-size: 14px;
+        border-radius: 18px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .form-input:focus {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow:
+            0 0 0 4px rgba(102, 126, 234, 0.15),
+            0 12px 30px rgba(102, 126, 234, 0.2),
+            0 0 20px rgba(102, 126, 234, 0.1);
+    }
+
+    .input-wrapper {
+        animation:
+            inputSlideIn 0.6s ease-out,
+            mobileInputFloat 8s ease-in-out infinite;
+    }
+
+    @keyframes mobileInputFloat {
+        0%, 100% { transform: translateX(0px); }
+        25% { transform: translateX(2px); }
+        75% { transform: translateX(-2px); }
+    }
+
+    /* Mobile Submit Button */
+    .submit-button {
+        padding: 18px 16px;
+        font-size: 15px;
+        border-radius: 18px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .submit-button:hover:not(:disabled) {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow:
+            0 15px 35px rgba(102, 126, 234, 0.5),
+            0 0 25px rgba(102, 126, 234, 0.3),
+            0 0 0 1px rgba(255, 255, 255, 0.3);
+        animation: mobileButtonGlow 2s ease-in-out infinite;
+    }
+
+    @keyframes mobileButtonGlow {
+        0%, 100% {
+            box-shadow:
+                0 15px 35px rgba(102, 126, 234, 0.5),
+                0 0 25px rgba(102, 126, 234, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
+        50% {
+            box-shadow:
+                0 15px 35px rgba(102, 126, 234, 0.7),
+                0 0 35px rgba(102, 126, 234, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    /* Mobile Divider Animation */
+    .divider {
+        margin: 28px 0;
+        animation: dividerSlide 1s ease-out;
+    }
+
+    @keyframes dividerSlide {
+        from {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        to {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
+
+    /* Mobile Error Message */
+    .error-message {
+        animation:
+            shake 0.5s ease-in-out,
+            mobileErrorPulse 2s ease-in-out infinite;
+        border-radius: 12px;
+    }
+
+    @keyframes mobileErrorPulse {
+        0%, 100% {
+            background: #fed7d7;
+            box-shadow: 0 0 0 0 rgba(197, 48, 48, 0.3);
+        }
+        50% {
+            background: #fecaca;
+            box-shadow: 0 0 0 8px rgba(197, 48, 48, 0);
+        }
+    }
+
+    /* Mobile Toggle Button */
+    .toggle-button {
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .toggle-button:hover {
+        transform: scale(1.05);
+        color: #5a67d8;
+        text-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+    }
+}

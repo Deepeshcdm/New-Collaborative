@@ -1,0 +1,42 @@
+/* ====================================================================
+   DARK MODE - Dark theme styles and overrides
+   ==================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    .login-container {
+        background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    }
+
+    .login-card {
+        background: rgba(26, 32, 44, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .login-title {
+        color: #f7fafc;
+    }
+
+    .login-subtitle {
+        color: #a0aec0;
+    }
+
+    .form-input {
+        background: #2d3748;
+        border-color: #4a5568;
+        color: #f7fafc;
+    }
+
+    .form-input:focus {
+        border-color: #667eea;
+    }
+
+    .google-button {
+        background: #2d3748;
+        color: #f7fafc;
+        border-color: #4a5568;
+    }
+
+    .google-button:hover:not(:disabled) {
+        background: #4a5568;
+    }
+}

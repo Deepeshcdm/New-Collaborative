@@ -1,0 +1,189 @@
+/* ====================================================================
+   MICRO-ANIMATIONS - Advanced animations and interactive effects
+   ==================================================================== */
+
+@media (max-width: 768px) {
+    /* Touch ripple effect */
+    .touch-ripple {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .touch-ripple::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+        pointer-events: none;
+    }
+
+    .touch-ripple:active::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Enhanced input focus animations */
+    .input-wrapper:focus-within {
+        animation: inputFocusGlow 0.3s ease-out;
+    }
+
+    @keyframes inputFocusGlow {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+    }
+
+    /* Staggered animation for form elements */
+    .input-group {
+        opacity: 0;
+        animation: staggeredFadeIn 0.6s ease-out forwards;
+    }
+
+    .input-group:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .input-group:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .input-group:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    @keyframes staggeredFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    /* Enhanced password toggle animation */
+    .password-toggle {
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .password-toggle:active {
+        transform: scale(0.9) rotate(10deg);
+    }
+
+    /* Mobile-specific hover states */
+    @media (hover: none) and (pointer: coarse) {
+        .social-button:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .submit-button:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .form-input:hover {
+            transform: none;
+        }
+    }
+
+    /* Loading animation enhancement for mobile */
+    .loading-spinner {
+        width: 24px;
+        height: 24px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top: 3px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite, loadingPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes loadingPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+    }
+
+    /* Enhanced error message for mobile */
+    .error-message {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .error-message::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        animation: errorShimmer 2s ease-in-out infinite;
+    }
+
+    @keyframes errorShimmer {
+        0% { left: -100%; }
+        100% { left: 100%; }
+    }
+
+    /* Card entrance animation */
+    .login-card {
+        animation: slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .login-card::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background:
+            radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 70% 70%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+        animation: mobileCardShimmer 8s ease-in-out infinite;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    @keyframes mobileCardShimmer {
+        0%, 100% {
+            transform: rotate(0deg) scale(1);
+            opacity: 0.3;
+        }
+        50% {
+            transform: rotate(180deg) scale(1.1);
+            opacity: 0.6;
+        }
+    }
+
+    /* Toggle mode animation */
+    .toggle-mode {
+        animation: fadeInUp 0.6s ease-out 0.5s both;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Social icons rotation on interaction */
+    .social-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .social-button:active .social-icon {
+        transform: rotate(360deg) scale(1.1);
+    }
+}

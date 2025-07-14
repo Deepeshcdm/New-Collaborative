@@ -1,0 +1,22 @@
+/* ====================================================================
+   DIVIDER - "OR" separator between social and form login
+   ==================================================================== */
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.divider-text {
+    padding: 0 16px;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 500;
+}

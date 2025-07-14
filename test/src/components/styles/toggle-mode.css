@@ -1,0 +1,29 @@
+/* ====================================================================
+   TOGGLE MODE - Switch between login and register
+   ==================================================================== */
+
+.toggle-mode {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.toggle-mode p {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #667eea;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+    color: #5a67d8;
+}

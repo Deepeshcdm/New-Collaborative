@@ -1,0 +1,39 @@
+/* ====================================================================
+   HEADER SECTION - Title and subtitle with animations
+   ==================================================================== */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0 0 8px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: titleGlow 2s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+@keyframes titleGlow {
+    from {
+        filter: drop-shadow(0 0 5px rgba(102, 126, 234, 0.3));
+        transform: scale(1);
+    }
+    to {
+        filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.5));
+        transform: scale(1.02);
+    }
+}
+
+.login-subtitle {
+    color: #718096;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 400;
+}
