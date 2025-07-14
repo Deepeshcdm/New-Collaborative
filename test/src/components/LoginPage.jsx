@@ -117,6 +117,9 @@ const LoginPage = () => {
                                 : 'Sign up to get started with us'
                             }
                         </p>
+                        <p className="welcome-note">
+                            Cook together, shop smart, save time
+                        </p>
                     </div>
 
                     {error && (

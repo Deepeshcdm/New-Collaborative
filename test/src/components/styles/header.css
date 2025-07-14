@@ -38,3 +38,25 @@
     margin: 0;
     font-weight: 400;
 }
+
+.welcome-note {
+    color: #667eea;
+    font-size: 12px;
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    font-style: italic;
+    opacity: 0.8;
+    animation: welcomeSlide 1s ease-out 0.5s both;
+}
+
+@keyframes welcomeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}

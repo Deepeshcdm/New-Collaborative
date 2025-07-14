@@ -83,6 +83,12 @@
             mobileTitlePulse 4s ease-in-out infinite;
     }
 
+    .welcome-note {
+        font-size: 11px;
+        margin: 6px 0 0 0;
+        animation: welcomeSlide 1s ease-out 0.8s both;
+    }
+
     @keyframes mobileTitlePulse {
 
         0%,
