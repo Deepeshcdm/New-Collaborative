@@ -32,17 +32,17 @@
     /* Mobile Card Adjustments */
     .login-card {
         padding: 0;
-        border-radius: 20px;
+        border-radius: 18px;
         animation: slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         box-shadow:
-            0 30px 60px rgba(0, 0, 0, 0.2),
+            0 25px 50px rgba(0, 0, 0, 0.2),
             0 0 0 1px rgba(255, 255, 255, 0.3),
             inset 0 1px 0 rgba(255, 255, 255, 0.4);
     }
 
     /* Mobile Sigmoid Curve */
     .login-card::before {
-        height: 240px;
+        height: 180px;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #9f7aea 100%);
         clip-path: polygon(0 0,
                 100% 0,
@@ -59,34 +59,28 @@
 
     /* Mobile App Icon */
     .app-icon-container {
-        top: 55px;
-        width: 75px;
-        height: 75px;
+        top: 45px;
+        width: 60px;
+        height: 60px;
     }
 
     .app-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
 
     /* Mobile Content Padding */
     .login-content {
-        padding: 160px 24px 32px 24px;
+        padding: 120px 20px 24px 20px;
     }
 
     /* Mobile Title Animations */
     .login-title {
-        font-size: 28px;
+        font-size: 22px;
         animation:
             titleGlow 2s ease-in-out infinite alternate,
             mobileTitlePulse 4s ease-in-out infinite;
-    }
-
-    .welcome-note {
-        font-size: 11px;
-        margin: 6px 0 0 0;
-        animation: welcomeSlide 1s ease-out 0.8s both;
     }
 
     @keyframes mobileTitlePulse {
@@ -103,9 +97,9 @@
 
     /* Mobile Social Buttons */
     .social-button {
-        padding: 16px 16px;
-        font-size: 14px;
-        border-radius: 18px;
+        padding: 12px 14px;
+        font-size: 13px;
+        border-radius: 16px;
         position: relative;
         transform-style: preserve-3d;
     }
@@ -138,9 +132,9 @@
 
     /* Mobile Form Inputs */
     .form-input {
-        padding: 16px 16px 16px 48px;
-        font-size: 14px;
-        border-radius: 18px;
+        padding: 14px 14px 14px 42px;
+        font-size: 13px;
+        border-radius: 16px;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
@@ -176,9 +170,9 @@
 
     /* Mobile Submit Button */
     .submit-button {
-        padding: 18px 16px;
-        font-size: 15px;
-        border-radius: 18px;
+        padding: 15px 14px;
+        font-size: 14px;
+        border-radius: 16px;
         position: relative;
         overflow: hidden;
     }
@@ -212,7 +206,7 @@
 
     /* Mobile Divider Animation */
     .divider {
-        margin: 28px 0;
+        margin: 18px 0;
         animation: dividerSlide 1s ease-out;
     }
 

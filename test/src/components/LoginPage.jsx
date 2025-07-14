@@ -118,7 +118,7 @@ const LoginPage = () => {
                             }
                         </p>
                         <p className="welcome-note">
-                            Cook together, shop smart, save time
+                            Collaborative cooking made simple and smart
                         </p>
                     </div>
 

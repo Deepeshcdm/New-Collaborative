@@ -4,19 +4,19 @@
 
 .submit-button {
     width: 100%;
-    padding: 18px 20px;
+    padding: 16px 18px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
-    border-radius: 16px;
-    font-size: 16px;
+    border-radius: 14px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 56px;
+    min-height: 52px;
     position: relative;
     overflow: hidden;
 }

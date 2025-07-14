@@ -3,22 +3,22 @@
    ==================================================================== */
 
 .social-login-section {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .social-button {
     width: 100%;
-    padding: 16px 20px;
+    padding: 14px 18px;
     border: none;
-    border-radius: 16px;
-    font-size: 15px;
+    border-radius: 14px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 10px;
+    margin-bottom: 10px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
