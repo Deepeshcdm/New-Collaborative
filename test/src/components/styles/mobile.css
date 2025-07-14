@@ -10,15 +10,20 @@
     }
 
     @keyframes mobileBackgroundShift {
-        0%, 100% {
+
+        0%,
+        100% {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
+
         25% {
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
         }
+
         50% {
             background: linear-gradient(135deg, #667eea 0%, #9f7aea 100%);
         }
+
         75% {
             background: linear-gradient(135deg, #9f7aea 0%, #667eea 100%);
         }
@@ -79,9 +84,12 @@
     }
 
     @keyframes mobileTitlePulse {
-        0%, 100% {
+
+        0%,
+        100% {
             transform: scale(1);
         }
+
         50% {
             transform: scale(1.05);
         }
@@ -109,9 +117,17 @@
     }
 
     @keyframes mobileButtonRipple {
-        0% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
-        70% { box-shadow: 0 0 0 20px rgba(102, 126, 234, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0); }
+        0% {
+            box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+        }
+
+        70% {
+            box-shadow: 0 0 0 20px rgba(102, 126, 234, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+        }
     }
 
     /* Mobile Form Inputs */
@@ -137,9 +153,19 @@
     }
 
     @keyframes mobileInputFloat {
-        0%, 100% { transform: translateX(0px); }
-        25% { transform: translateX(2px); }
-        75% { transform: translateX(-2px); }
+
+        0%,
+        100% {
+            transform: translateX(0px);
+        }
+
+        25% {
+            transform: translateX(2px);
+        }
+
+        75% {
+            transform: translateX(-2px);
+        }
     }
 
     /* Mobile Submit Button */
@@ -161,12 +187,15 @@
     }
 
     @keyframes mobileButtonGlow {
-        0%, 100% {
+
+        0%,
+        100% {
             box-shadow:
                 0 15px 35px rgba(102, 126, 234, 0.5),
                 0 0 25px rgba(102, 126, 234, 0.3),
                 0 0 0 1px rgba(255, 255, 255, 0.3);
         }
+
         50% {
             box-shadow:
                 0 15px 35px rgba(102, 126, 234, 0.7),
@@ -186,6 +215,7 @@
             opacity: 0;
             transform: scaleX(0);
         }
+
         to {
             opacity: 1;
             transform: scaleX(1);
@@ -201,10 +231,13 @@
     }
 
     @keyframes mobileErrorPulse {
-        0%, 100% {
+
+        0%,
+        100% {
             background: #fed7d7;
             box-shadow: 0 0 0 0 rgba(197, 48, 48, 0.3);
         }
+
         50% {
             background: #fecaca;
             box-shadow: 0 0 0 8px rgba(197, 48, 48, 0);

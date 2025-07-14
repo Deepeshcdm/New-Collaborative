@@ -22,6 +22,7 @@
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -50,7 +51,7 @@
     transition: all 0.3s ease;
 }
 
-.form-input:focus ~ .input-icon {
+.form-input:focus~.input-icon {
     color: #667eea;
     transform: scale(1.1);
 }
